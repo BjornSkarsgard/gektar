@@ -1,0 +1,69 @@
+/* Your custom fonts here */
+
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/
+
+
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('../fonts/Bebas/BebasNeueBold.eot');
+    src: url('../fonts/Bebas/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Bebas/BebasNeueBold.woff') format('woff'),
+    url('../fonts/Bebas/BebasNeueBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/Open Sans/OpenSans-Light.eot');
+    src: url('../fonts/Open Sans/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Open Sans/OpenSans-Light.woff') format('woff'),
+    url('../fonts/Open Sans/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/Open Sans/OpenSans-Bold.eot');
+    src: url('../fonts/Open Sans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Open Sans/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/Open Sans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/Open Sans/OpenSans-SemiBold.eot');
+    src: url('../fonts/Open Sans/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Open Sans/OpenSans-SemiBold.woff') format('woff'),
+    url('../fonts/Open Sans/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/Open Sans/OpenSans-Regular.eot');
+    src: url('../fonts/Open Sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Open Sans/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/Open Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }

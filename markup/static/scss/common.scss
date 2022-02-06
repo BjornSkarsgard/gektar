@@ -1,0 +1,43 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+
+
+.page__wrapper {
+    overflow: hidden;
+}
+
+.page-buffer {
+    height: 120px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        height: 100px;
+    }
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+* html {
+    height: 100%;
+}
+
+@media (min-width: 1600px) {
+    body .container {
+        max-width: 1596px;
+    }
+}
+
+.section__form {
+   background-color: #D7E2EA; 
+}
+
+.container {
+    box-sizing: border-box;
+}

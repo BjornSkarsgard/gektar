@@ -1,0 +1,17 @@
+mixin form(data)
+    .form
+        h1.form__title Получите каталог поселков 
+        form#form(action="GET")
+            .form__field
+                input#fname(type="text", name="firstName", placeholder="Имя")
+            .form__field 
+                input#fieldTel(type="number", name="tel", placeholder="Телефон")
+            .form__field
+                input#fieldEmail(type="email", name="email", placeholder="E-mail")
+            span.form__checkbox
+                label
+                    input(type="checkbox", name="checkboxRules" checked)
+                    span.checkbox
+                    span Я даю согласие на обработку персональных данных, получение информационных рассылок о проекте и соглашаюсь с 
+                        a(href="#!") политикой конфиденциальности.
+            button(type="submit").btn.form__btn Отправить

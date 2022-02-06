@@ -1,0 +1,42 @@
+doctype html
+
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/card/card.pug
+    include ../components/svg/svg.pug
+    include ../components/form/form.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+        main
+            .page-buffer
+
+            .container
+                .row 
+                    .col-12
+                        section.section__card
+                            .row.slick-carousel
+                                .col-3
+                                    +card("../static/img/content/1.png", "Гектар на просторе", "600 000", "- 401 000", "199 000", "card--red")
+                                .col-3
+                                    +card("../static/img/content/2.png", "Гектар у леса", "900 000", "- 401 000", "299 000", "card--green")
+                                .col-3
+                                    +card("../static/img/content/3.png", "Гектар у дороги", "1 500 000", "- 401 000", "499 000", "card--blue")
+                                .col-3
+                                    +card("../static/img/content/4.png", "Персональные участки", "1 500 000", "- 401 000", "499 000", "card--lightblue")
+            .page-buffer
+            section.section__form
+                .container 
+                    .row
+                        .col-lg-8.offset-lg-2.col-12
+                            +form()
+            .page-buffer
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

@@ -1,0 +1,18 @@
+- attributes == {class: "link-btn"}
+mixin card(img, title, discountBefore, discountAfter, costCurrent, color)
+    .card(class = color)
+        .card__image
+            img(src= img, alt="фотография дома")
+            .card__icon
+                +svg("house", 56, 44)
+        .card__desc
+            h2.card__title= title
+            .card__discount
+                span.card__discount-before= discountBefore
+                span.card__discount-after= discountAfter
+            .card__cost
+                span.card__cost-current= costCurrent
+                span.card__cost-text Рублей 
+                    br
+                    |зa участок
+            a(href="#!").btn.card__btn Подобрать участок 

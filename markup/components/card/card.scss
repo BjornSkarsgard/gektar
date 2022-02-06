@@ -1,0 +1,228 @@
+.card {
+
+    width: 100%;
+
+    &__image {
+        position: relative;
+        height: 200px;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: 18px;
+        bottom: -25px;
+    }
+
+    &__desc {
+        padding-left: 37px;
+        padding-right: 37px;
+        padding-bottom: 35px;
+        padding-top: 48px;
+        border: 2px solid #D7E2EA;
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background:linear-gradient(180deg, #FFFFFF, #F2F6F8);
+    }
+
+    &__title {
+        font-family: "Bebas Neue Bold", Helvetica, sans-serif;
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    &__discount {
+        margin-bottom: 36px;
+    }
+
+    &__discount-before {
+        font-family: 'Open Sans Light', Arial, sans-serif;
+        font-size: 23.34px;
+        color: $textblue;
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 12px;
+            width: 100%;
+            height: 2px;
+            background-color: $textblue;
+        }
+    }
+
+    &__discount-after {
+        font-family: 'Open Sans Bold', Arial, sans-serif;
+        font-size: 20.42px;
+        color: $textblue;
+        background-color: #FEED01;
+        padding-right: 16px;
+        margin-left: 26px;
+        padding-bottom: 4px;
+        position: relative;
+
+        &::before {
+            content: ''; 
+            position: absolute;
+            left: -34px; bottom: 0px; 
+            border: 16px solid transparent; 
+            border-right: 18px solid #FEED01; 
+        }
+    }
+
+
+    &__cost {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-current {
+            margin-bottom: 28px;
+            font-size: 43px;
+            color: $textblue;
+            font-family: 'Open Sans Semibold', Arial, sans-serif;
+        }
+
+        &-text {
+            color: $textblue;
+            font-family: 'Open Sans Semibold', Arial, sans-serif;
+            font-size: 14.5px;
+            max-width: 100px;
+            text-align: center;
+            position: relative;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                background-color: #D7E2EA;
+            }
+
+            &::before {
+                top: -10px;
+            }
+
+            &::after {
+                bottom: -15px;
+            }
+        }
+
+    }
+
+    &__slick {
+        display: flex;
+    }
+}
+
+.card {
+    &--red {
+        .card__title {
+            color: #EC1D25;
+        }
+
+        .card__icon svg {
+            fill: #EC1D25;
+        }
+
+        .card__btn {
+            background-color: #EC1D25;
+        }
+    }
+
+    &--green {
+        .card__title {
+            color: #00A03E;
+        }
+
+        .card__icon svg {
+            fill: #00A03E;
+        }
+
+        .card__btn {
+            background-color: #00A03E;
+        }
+    }
+
+    &--blue {
+        .card__title {
+            color: #0182AC;
+        }
+
+        .card__icon svg {
+            fill: #0182AC;
+        }
+
+        .card__btn {
+            background-color: #0182AC;
+        }
+    }
+      
+    &--lightblue {
+        .card__title {
+            color: #53B4E0;
+        }
+
+        .card__icon svg {
+            fill: #53B4E0;
+        }
+
+        .card__btn {
+            background-color: #53B4E0;
+        }
+    }
+}
+
+.section__card {
+    & .slick-dots {
+        display: flex;
+        padding: 0;
+        margin-top: 16px;
+        justify-content: center;
+
+        & button {
+            display: none;
+        }
+
+        & li {
+            margin-right: 16px;
+            width: 18px;
+            height: 18px;
+            background-color: #E3E3E3;
+            transition: background-color .2s ease-in-out;
+            border-radius: 50%;
+            &::marker {
+                content: none;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.slick-active {
+                background-color: #FF0000;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        &__desc {
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+    }
+}
